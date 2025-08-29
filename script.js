@@ -1,7 +1,4 @@
 // variables
-let meter = 3.281
-let liter = 0.264
-let kilogram = 2.204
 
 const volumeEl = document.getElementById("volume")
 const massEl = document.getElementById("mass")
@@ -11,35 +8,11 @@ const convertBtn = document.getElementById("convert-btn")
 
 convertBtn.addEventListener("click", function() {
     const inputValue = Number(inputCon.value)
-    getMetrics(inputValue)
+    const metersToFeet = inputValue * 3.281
+    const litersToGallons = inputValue * 0.264
+    const kilosToPounds = inputValue * 2.204
+
+    lengthEl.textContent = `${metersToFeet} meters = `
+    massEl.textContent = `${kilosToPounds} kilos = `
+    volumeEl.textContent = `${litersToGallons} liters = `
 })
-
-function getMetrics(value) {
-    if (value === 20) {
-    let length = 20
-    let feet = 65.616
-    let kilos = 20
-    let pounds = 44.092
-    lengthEl.textContent = `${length} meters = ${feet} feet`
-    massEl.textContent = `${kilos} kilos = ${pounds} pounds`
-        } else {
-            lengthEl.textContent = `No data`
-            massEl.textContent = `No data`
-    }
-}
-
-// Instead of checking for one specific number (like 20), 
-// think about how to calculate the feet value dynamically from the input number.
-
-// Remember the formula:
-// 1 meter ≈ 3.28084 feet
-// Use this to convert any meters input to feet.
-
-// You'll want to update your getMetrics function to:
-// Receive the input value.
-// Calculate feet by multiplying input by the conversion factor.
-// Show the result in your <p> element.
-
-// Think about formatting:
-// Do you want to limit decimal places?
-// (Example: feet.toFixed(2))
