@@ -6,7 +6,9 @@ let kilogram = 2.204
 const volumeEl = document.getElementById("volume")
 const massEl = document.getElementById("mass")
 const lengthEl = document.getElementById("length")
+const inputCon = document.getElementById("input-con")
 const convertBtn = document.getElementById("convert-btn")
 convertBtn.addEventListener("click", function() {
-    console.log("button clicked!")
+    const inputValue = inputCon.value
+    console.log(inputValue)
 })
