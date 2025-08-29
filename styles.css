@@ -6,7 +6,6 @@
     --color-one: #FFFFFF;
     --color-two: #3D3D3D;
     --color-three: #CCC1FF;
-    --color-four: #
 }
 
 body {
@@ -15,7 +14,7 @@ body {
     font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
     max-width: 1920px;
     overflow-x: hidden;
-    background-color: var(--container-two);
+    background-color: #141a23;
     text-align: center;
 }
 
@@ -25,5 +24,17 @@ section {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 30px;
+}
+
+.top-container {
+    background-color: var(--container-one);
+    width: 450px;
+    height: 200px;
+}
+
+.bottom-container {
+    background-color: var(--container-two);
+    width: 450px;
+    height: 350px;
 }
