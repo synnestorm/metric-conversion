@@ -11,7 +11,6 @@ const convertBtn = document.getElementById("convert-btn")
 
 convertBtn.addEventListener("click", function() {
     const inputValue = Number(inputCon.value)
-    console.log("Converted input:", inputValue)
     getMetrics(inputValue)
 })
 
