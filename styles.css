@@ -8,3 +8,12 @@
     --color-three: #CCC1FF;
     --color-four: #
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 1920px;
+    overflow-x: hidden;
+    background-color: var(--container-two);
+}
