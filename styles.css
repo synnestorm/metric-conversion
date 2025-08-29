@@ -16,4 +16,14 @@ body {
     max-width: 1920px;
     overflow-x: hidden;
     background-color: var(--container-two);
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
 }
