@@ -31,10 +31,29 @@ section {
     background-color: var(--container-one);
     width: 450px;
     height: 200px;
+    color: var(--color-one);
 }
 
 .bottom-container {
     background-color: var(--container-two);
     width: 450px;
     height: 350px;
+}
+
+h1 {
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+h2 {
+    font-size: 45px;
+    border: 1px solid #CCC1FF;
+    border-radius: 5px;
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    position: relative;
+    bottom: 20px;
 }
