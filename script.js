@@ -18,10 +18,14 @@ function getMetrics(value) {
     if (value === 20) {
     let length = 20
     let feet = 65.616
-    lengthEl.textContent = `${length} meters = ${feet}`
-} else {
-    lengthEl.textContent = `No data available:`
-}
+    let kilos = 20
+    let pounds = 44.092
+    lengthEl.textContent = `${length} meters = ${feet} feet`
+    massEl.textContent = `${kilos} kilos = ${pounds} pounds`
+        } else {
+            lengthEl.textContent = `No data`
+            massEl.textContent = `No data`
+    }
 }
 
 // Instead of checking for one specific number (like 20), 
