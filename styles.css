@@ -38,6 +38,9 @@ section {
     background-color: var(--container-two);
     width: 450px;
     height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
@@ -70,4 +73,22 @@ button {
 
 button:hover {
     background-color: #CCC1FF;
+}
+
+.measurement {
+    background-color: var(--measure-bg);
+    width: 400px;
+    height: 80px;
+    margin-top: 30px;
+}
+
+h3 {
+    color: var(--color-three);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+p {
+    color: var(--color-one);
+    font-size: 13px;
 }
