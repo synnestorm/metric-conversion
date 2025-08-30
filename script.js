@@ -18,10 +18,10 @@ convertBtn.addEventListener("click", function() {
     const kilosToPounds = inputValue * 2.204
     const poundsToKilos = inputValue * 0.4535
 
-    lengthEl.textContent = `${inputValue} meters = ${metersToFeet.toFixed(2)} feet
-                                 | ${inputValue} feet = ${feetToMeters.toFixed(2)} meters`
-    massEl.textContent = `${inputValue} kilos = ${kilosToPounds.toFixed(2)} pounds
-                                     | ${inputValue} pounds = ${poundsToKilos.toFixed(2)} kilos`
-    volumeEl.textContent = `${inputValue} liters = ${litersToGallons.toFixed(2)} gallons
-                                         | ${inputValue} gallons = ${gallonsToLiters.toFixed(2)} liters`
+    lengthEl.textContent = `${inputValue} meters = ${metersToFeet.toFixed(3)} feet
+                                 | ${inputValue} feet = ${feetToMeters.toFixed(3)} meters`
+    massEl.textContent = `${inputValue} kilos = ${kilosToPounds.toFixed(3)} pounds
+                                     | ${inputValue} pounds = ${poundsToKilos.toFixed(3)} kilos`
+    volumeEl.textContent = `${inputValue} liters = ${litersToGallons.toFixed(3)} gallons
+                                         | ${inputValue} gallons = ${gallonsToLiters.toFixed(3)} liters`
 })
