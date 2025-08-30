@@ -1,3 +1,4 @@
+/* CSS variables */
 :root {
     --container-one: #6943FF;
     --container-two: #1F2937;
@@ -17,6 +18,8 @@ body {
     background-color: #141a23;
     text-align: center;
 }
+
+/* containers */
 
 section {
     display: flex;
@@ -43,10 +46,14 @@ section {
     align-items: center;
 }
 
-h1 {
-    font-size: 22px;
-    padding-top: 10px;
+.measurement {
+    background-color: var(--measure-bg);
+    width: 400px;
+    height: 80px;
+    margin-top: 30px;
 }
+
+/* input and button */
 
 input {
     width: 70px;
@@ -77,11 +84,11 @@ button:hover {
     background-color: #CCC1FF;
 }
 
-.measurement {
-    background-color: var(--measure-bg);
-    width: 400px;
-    height: 80px;
-    margin-top: 30px;
+/* headers and paragraphs */
+
+h1 {
+    font-size: 22px;
+    padding-top: 10px;
 }
 
 h2 {
