@@ -1,10 +1,13 @@
-// variables
+
+// variables fetched from the DOM
 
 const volumeEl = document.getElementById("volume")
 const massEl = document.getElementById("mass")
 const lengthEl = document.getElementById("length")
 const inputCon = document.getElementById("input-con")
 const convertBtn = document.getElementById("convert-btn")
+
+// function for conversion
 
 convertBtn.addEventListener("click", function() {
     const inputValue = Number(inputCon.value)
